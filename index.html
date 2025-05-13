@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenyan Delights | Authentic Kenyan Recipes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Kenyan Flag Header -->
+    <div class="kenyan-flag">
+        <div class="black"></div>
+        <div class="red"></div>
+        <div class="green"></div>
+        <div class="white"></div>
+        <div class="red"></div>
+        <div class="black"></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <h1>Kenyan Delights</h1>
+            <p>Authentic Kenyan Recipes</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="recipes/ugali.html">Recipes</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Search recipes...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="featured-recipes">
+            <h2>Popular Kenyan Dishes</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="main">Main Dishes</button>
+                <button class="filter-btn" data-filter="side">Side Dishes</button>
+                <button class="filter-btn" data-filter="meat">Meat Dishes</button>
+            </div>
+            
+            <div class="recipe-grid">
+                <!-- Recipe Card 1 -->
+                <div class="recipe-card" data-category="main" data-tags="ugali staple kenyan">
+                    <img src="images/ugali.jpg" alt="Ugali">
+                    <div class="recipe-info">
+                        <h3>Ugali</h3>
+                        <p>Kenya's staple food made from maize flour</p>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 30 mins</span>
+                            <span><i class="fas fa-utensils"></i> 4 servings</span>
+                        </div>
+                        <a href="recipes/ugali.html" class="btn">View Recipe</a>
+                    </div>
+                </div>
+                
+                <!-- Recipe Card 2 -->
+                <div class="recipe-card" data-category="meat" data-tags="nyama choma grilled meat barbecue">
+                    <img src="images/nyama-choma.jpg" alt="Nyama Choma">
+                    <div class="recipe-info">
+                        <h3>Nyama Choma</h3>
+                        <p>Kenyan style grilled meat</p>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 2 hours</span>
+                            <span><i class="fas fa-utensils"></i> 6 servings</span>
+                        </div>
+                        <a href="recipes/nyama-choma.html" class="btn">View Recipe</a>
+                    </div>
+                </div>
+                
+                <!-- Recipe Card 3 -->
+                <div class="recipe-card" data-category="side" data-tags="sukuma wiki greens vegetable">
+                    <img src="images/sukuma-wiki.jpg" alt="Sukuma Wiki">
+                    <div class="recipe-info">
+                        <h3>Sukuma Wiki</h3>
+                        <p>Healthy Kenyan collard greens</p>
+                        <div class="recipe-meta">
+                            <span><i class="fas fa-clock"></i> 20 mins</span>
+                            <span><i class="fas fa-utensils"></i> 4 servings</span>
+                        </div>
+                        <a href="recipes/sukuma-wiki.html" class="btn">View Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="about-preview">
+            <h2>About Kenyan Cuisine</h2>
+            <p>Kenyan cuisine reflects the country's diverse cultures and agricultural bounty. From the coastal Swahili dishes to the highland Kikuyu staples, our food tells the story of our nation...</p>
+            <a href="about.html" class="btn">Read More</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="recipes/ugali.html">Recipes</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Kenyan Delights. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
